@@ -2,11 +2,38 @@
 
 # Tasks
 
+# Pseudocode
+
+```
+WHILE TRUE
+	show_prompt()
+	cmd = read_user_input()
+	IF cmd == "exit"
+		exit() //system call
+	ELSE
+		tokens = tokenize_user_input(cmd)
+	IF check_builtin_cmd(tokens)
+		path = check_executable_file(cmd[0])
+		IF path == null
+			show_error("Command not found")
+		ELSE
+			p_id = fork() //system call
+			IF p_id == 0
+				run_cmd(path,tokens)
+			ELSE
+				pp_id = p_id
+				wait(pp_id) //system call
+```
+
+# Flowchart
+![simple shell drawio (4)](https://github.com/globalsmile/simple_shell/assets/106287208/808eaad1-93ed-461f-bb4c-87608a5fab21)
+
+
 ## 0. Betty would be proud
 
 * Write a beautiful code that passes the Betty checks.
 
-**Solution:** [simple_shell(https://github.com/globalsmile/simple_shell)
+**Solution:** [simple_shell](https://github.com/globalsmile/simple_shell)
 
 ## 1. Simple shell 0.1
 
@@ -26,7 +53,7 @@
 * You don’t have to:
 	- use the PATH
 	- implement built-ins
-	- handle special characters : `"`, `'`, `\``, `\``, `*`, `&`, `#`
+	- handle special characters : ", ', ,,\ *, &, #
 	- be able to move the cursor
 	- handle commands with arguments
 
@@ -40,7 +67,7 @@
 
 	- Handle command lines with arguments
 
-**Solution:** [simple_shell(https://github.com/globalsmile/simple_shell)
+**Solution:** [simple_shell](https://github.com/globalsmile/simple_shell)
 
 ## 3. Simple shell 0.3
 
@@ -67,7 +94,7 @@
 
 	- Implement the env built-in, that prints the current environment
 
-**Solution:** [simple_shell(https://github.com/globalsmile/simple_shell)
+**Solution:** [simple_shell](https://github.com/globalsmile/simple_shell)
 
 ## 6. Simple shell 0.1.1
 
