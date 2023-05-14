@@ -15,7 +15,7 @@ WHILE TRUE
 	IF check_builtin_cmd(tokens)
 		path = check_executable_file(cmd[0])
 		IF path == null
-			show_error("Command not found")
+			perror("Command not found")
 		ELSE
 			p_id = fork() //system call
 			IF p_id == 0
@@ -26,7 +26,7 @@ WHILE TRUE
 ```
 
 # Flowchart
-![simple shell drawio (4)](https://github.com/globalsmile/simple_shell/assets/106287208/808eaad1-93ed-461f-bb4c-87608a5fab21)
+![simple shell (1)](https://github.com/globalsmile/simple_shell/assets/106287208/58949738-eb02-44d9-839c-6335973578aa)
 
 
 ## 0. Betty would be proud
