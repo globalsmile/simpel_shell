@@ -4,7 +4,6 @@
 #include <ctype.h>
 #include "main.h"
 #include "/root/alx-low_level_programming/0x06-pointers_arrays_strings/2-strncpy.c"
-#include "/root/alx-low_level_programming/0x05-pointers_arrays_strings/2-strlen.c"
 /**
  * __split__string - splits a string
  * @user_input: string to split
@@ -14,7 +13,7 @@
 char **__split__string(char *user_input, int *total)
 {
 	char **sentence = NULL;
-	int len = _strlen(user_input);
+	int len = __strlen(user_input);
 	int word_count = 0;
 	int i = 0;
 
