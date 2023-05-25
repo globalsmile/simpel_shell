@@ -1,4 +1,6 @@
 #include "_pointers.h"
+#include <string.h>
+#include <stdlib.h>
 /**
  * _strncpy - copies a string
  * @dest: destination to copy
