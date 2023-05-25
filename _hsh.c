@@ -4,7 +4,7 @@
 #include <string.h>
 #include <sys/wait.h>
 #include "main.h"
-#include "https://github.com/globalsmile/printf/blob/master/_printf.c"
+#include "_printf.h"
 #include "alx-low_level_programming/0x06-pointers_arrays_strings/3-strcmp.c"
 
 /**
