@@ -1,4 +1,4 @@
-#include "_pointers.h"
+#include "main.h"
 /**
  * _strcpy - main function to copy
  *
