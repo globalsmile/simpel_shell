@@ -144,4 +144,29 @@ const char *_strchr(const char *s, char c);
  * Return: returns usigned values
  */
 size_t  _strcspn(const char *s, const char *reject);
+/**
+ * _strcpy - main function to copy
+ *
+ * @dest: destination to copy
+ * @src: src
+ *
+ * Return: a character value
+ */
+char *_strcpy(char *dest, char *src);
+/**
+ * _strncpy - copies a string
+ * @dest: destination to copy
+ * @src: source to copy
+ * @n: amount of places to copy
+ * Return: value of dest
+ */
+char *_strncpy(char *dest, char *src, int n);
+/**
+ * _strcmp - string to compare
+ * @s1: first string
+ * @s2: second string
+ *
+ * Return: value of string
+ */
+int _strcmp(char *s1, char *s2);
 #endif
