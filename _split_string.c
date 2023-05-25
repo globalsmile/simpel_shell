@@ -31,7 +31,7 @@ char **_split_string(char *user_input, int *total)
 			return (NULL);
 		}
 		words = temp;
-		words[(*total) - 1] = _strnup(token, _strlen(token));
+		words[(*total) - 1] = _strnup(token, __strlen(token));
 		token = strtok(NULL, " ");
 	}
 	free(duplicate);
