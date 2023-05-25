@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "main.h"
-#include "/root/alx-low_level_programming/0x06-pointers_arrays_strings/2-strncpy.c"
+#include "_pointers.h"
 /**
  * _strnup - allocate memory to copy string
  * @read_input: input string

@@ -3,8 +3,8 @@
 #include <string.h>
 #include <ctype.h>
 #include "main.h"
-#include "/root/alx-low_level_programming/0x06-pointers_arrays_strings/2-strncpy.c"
-#include "/root/alx-low_level_programming/0x05-pointers_arrays_strings/2-strlen.c"
+#include "_pointers.h"
+
 /**
  * __split__string - splits a string
  * @user_input: string to split

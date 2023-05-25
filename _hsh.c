@@ -5,7 +5,7 @@
 #include <sys/wait.h>
 #include "main.h"
 #include "_printf.h"
-#include "alx-low_level_programming/0x06-pointers_arrays_strings/3-strcmp.c"
+#include "_pointers.h"
 
 /**
  * main - entry point

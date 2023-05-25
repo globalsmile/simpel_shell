@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "main.h"
-#include "/root/alx-low_level_programming/0x05-pointers_arrays_strings/9-strcpy.c"
+#include "_pointers.h"
 /**
  * _strdup - duplicates a string
  * @user_input: string to duplicate
