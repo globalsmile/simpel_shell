@@ -14,7 +14,7 @@
 char **__split__string(char *user_input, int *total)
 {
 	char **sentence = NULL;
-	int len = _strlen(user_input);
+	int len = __strlen(user_input);
 	int word_count = 0;
 	int i = 0;
 

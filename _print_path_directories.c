@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "main.h"
-#include "_printf_h"
+#include "_printf.h"
 /**
  * _print_path_directories - prints directories in the PATH variable
  */

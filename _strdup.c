@@ -9,7 +9,7 @@
  */
 char *_strdup(char *user_input)
 {
-	size_t length = _strlen(user_input);
+	size_t length = __strlen(user_input);
 	char *dub = malloc((length + 1) * sizeof(char));
 
 	if (!user_input)
