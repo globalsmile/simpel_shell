@@ -18,7 +18,7 @@ char *_cmd_path(const char *cmd, char *cmd_path)
 	
 	if (path == NULL)
 		return (NULL);
-	
+
 	while (*dir != '\0')
 	{
 		const char *end = _strchr(dir, ':');

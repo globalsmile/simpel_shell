@@ -5,7 +5,32 @@
 #include <string.h>
 #include <ctype.h>
 #include <stddef.h>
+#define MAX_INPUT_LENGTH 100
+#define MAX_ARGS 10
+
 extern char **environ;
+/**
+ * _atoi - Convert a string to an integer.
+ * @s: The pointer to convert
+ *
+ * Return: A integer
+ */
+int _atoi(char *s);
+/**
+ * __memcpy - copies from source to dest values in array
+ * @dest: destination to copy to
+ * @src: source to copy from
+ * @n: n amount of times
+ * Return: return the string value
+ */
+char *__memcpy(char *dest, const char *src, unsigned int n);
+/**
+ * _cmd_path - gets the command path
+ * cmd: command
+ * cmd_path: command path
+ * Returns: full command PATH
+ */
+char *_cmd_path(const char *cmd, char *cmd_path);
 /**
  * _getline - collects a line input
  *
@@ -112,4 +137,11 @@ int _unsetenv(const char *name);
  * Return: character value
  */
 const char *_strchr(const char *s, char c);
+/**
+ * _strcspn - length of prefix substring
+ * @s: string to go through
+ * @reject: accepted bytes
+ * Return: returns usigned values
+ */
+size_t  _strcspn(const char *s, const char *reject);
 #endif

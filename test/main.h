@@ -10,6 +10,13 @@
 
 extern char **environ;
 /**
+ * _atoi - Convert a string to an integer.
+ * @s: The pointer to convert
+ *
+ * Return: A integer
+ */
+int _atoi(char *s);
+/**
  * __memcpy - copies from source to dest values in array
  * @dest: destination to copy to
  * @src: source to copy from

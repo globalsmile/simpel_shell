@@ -5,9 +5,9 @@
 #include "main.h"
 /**
  * _cmd_path - gets the command path
- * cmd: command
- * cmd_path: command path
- * Returns: full command PATH
+ * @cmd: command
+ * @cmd_path: command path
+ * Return: full command PATH
  */
 char *_cmd_path(const char *cmd, char *cmd_path)
 {
@@ -15,10 +15,10 @@ char *_cmd_path(const char *cmd, char *cmd_path)
 	const char *dir = path;
 	size_t cmd_length = __strlen(cmd);
 	size_t dir_length;
-	
+
 	if (path == NULL)
 		return (NULL);
-	
+
 	while (*dir != '\0')
 	{
 		const char *end = _strchr(dir, ':');
